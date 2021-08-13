@@ -1,0 +1,11 @@
+framework module flutter_tako_base {
+  umbrella header "flutter_tako_base-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module flutter_tako_base.Swift {
+    header "flutter_tako_base-Swift.h"
+    requires objc
+}

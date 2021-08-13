@@ -1,0 +1,20 @@
+{
+  "transaction_limits_title" : "ตั้งค่าวงเงิน",
+  "transaction_limits_transfer_limits_label": "วงเงินการโอน",
+  "transaction_limits_transfer_own_act": "โอนเงินไปยังบัญชีตนเองภายใน\nธนาคาร ซีไอเอ็มบี ไทย",
+  "transaction_limits_transfer_cimb_act": "โอนเงินไปยังบัญชีบุคคลอื่นภายใน\nธนาคาร ซีไอเอ็มบี ไทย",
+  "transaction_limits_transfer_prmotpay": "โอนเงินไปยังบัญชีต่างธนาคาร\nและพร้อมเพย์",
+  "transaction_limits_bill_payment_limits_label": "วงเงินการจ่ายบิล",
+  "transaction_limits_bill_payment": "จ่ายบิล และค่าบริการ",
+  "transaction_limits_currency_per_day": "บาท/วัน",
+
+  "transaction_limits_own_cimb_per_day_label": "ระบุวงเงิน/วัน",
+  "transaction_limits_own_cimb_enter_amount_label": "ระบุวงเงินได้ตั้งแต่",
+  "transaction_limits_own_cimb_currency_label": "บาท",
+
+  "transaction_setting_limits_transfer_own_act": "โอนเงินไปยังบัญชีตนเองภายใน ธนาคาร ซีไอเอ็มบี ไทย",
+  "transaction_setting_limits_transfer_cimb_act": "โอนเงินไปยังบัญชีบุคคลอื่นภายใน ธนาคาร ซีไอเอ็มบี ไทย",
+  "transaction_setting_limits_transfer_prmotpay": "โอนเงินไปยังบัญชีต่างธนาคาร และพร้อมเพย์",
+
+  "button_confirm": "ยืนยัน"
+}
