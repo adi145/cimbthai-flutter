@@ -26,7 +26,7 @@ let package = Package(
 //            dependencies: []),
         .binaryTarget(
               name: "cimbthai-flutter",
-              path: "./Sources/Flutter.xcframework"
+              path: "./Sources/*{.xcframework}"
             ),
 //        .testTarget(
 //            name: "cimbthai-flutterTests",
