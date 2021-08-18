@@ -6,33 +6,72 @@ import PackageDescription
 let package = Package(
     name: "cimbthai-flutter",
     platforms: [
-        .iOS(.v14)
-      ],
-    products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
-        .library(
-            name: "cimbthai-flutter",
-            targets: ["cimbthai-flutter"]),
+      .iOS(.v13)
     ],
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
+    products: [
+      .library(
+        name: "cimbthai-flutter",
+        targets: ["cimbthai-flutter", "FlutterApp","flutter_tako_base","FlutterPluginRegistrant","pathProvider","deviceInfo"]),
     ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on.
-//        .target(
-//            name: "cimbthai-flutter",
-//            dependencies: []),
-        .binaryTarget(
-              name: "cimbthai-flutter",
-              path: "./Sources/*{.xcframework}"
-            ),
-//        .testTarget(
-//            name: "cimbthai-flutterTests",
-//            dependencies: ["cimbthai-flutter"]),
+      //.target(name: "cimbthai-flutter"),
+      .binaryTarget(
+        name: "cimbthai-flutter",
+        path: "./Sources/Flutter.xcframework"
+      ),
+      .binaryTarget(
+          name: "FlutterApp",
+          path: "./Sources/App.xcframework"
+      ),
+      .binaryTarget(
+          name: "flutter_tako_base",
+          path: "./Sources/flutter_tako_base.xcframework"
+      ),
+      .binaryTarget(
+          name: "FlutterPluginRegistrant",
+          path: "./Sources/FlutterPluginRegistrant.xcframework"
+      ),
+      .binaryTarget(
+          name: "pathProvider",
+          path: "./Sources/path_provider.xcframework"
+      ),
+      .binaryTarget(
+           name: "deviceInfo",
+           path: "./Sources/device_info.xcframework"
+       )
+   //   .target(name: "cimbthai-flutter",
+  //                    dependencies: [
+  //                        .target(name: "Flutter", condition: .when(platforms: .some([.iOS]))),
+  //                        .target(name: "App", condition: .when(platforms: .some([.iOS]))),
+  //                        .target(name: "FlutterPluginRegistrant", condition: .when(platforms: .some([.iOS]))),
+  //                        .target(name: "flutter_tako_base", condition: .when(platforms: .some([.iOS]))),
+  //                        .target(name: "pathProvider", condition: .when(platforms: .some([.iOS]))),
+  //                        .target(name: "deviceInfo", condition: .when(platforms: .some([.iOS])))
+  //                    ]
+  //                    path: "cimbthai-flutter"
+   //           )
+  //    .binaryTarget(
+  //      name: "cimbthai-flutter",
+  //      path: "./Sources/App.xcframework"
+  //    ),
+  //    .binaryTarget(
+  //      name: "cimbthai-flutter",
+  //      path: "./Sources/device_info.xcframework"
+  //    ),
+  //    .binaryTarget(
+  //      name: "cimbthai-flutter",
+  //      path: "./Sources/flutter_tako_base.xcframework"
+  //    ),
+  //    .binaryTarget(
+  //      name: "cimbthai-flutter",
+  //      path: "./Sources/FlutterPluginRegistrant.xcframework"
+  //    ),
+  //    .binaryTarget(
+  //      name: "cimbthai-flutter",
+  //      path: "./Sources/path_provider.xcframework"
+  //    ),
     ]
-)
+  )
 
 //let package = Package(
 //  name: "cimbthai-flutter",
